@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CleanArchitecture" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.CleanArchitecture" parent="Base.Theme.CleanArchitecture" />
+
+    <style name="CustomShapeAppearance">
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">@dimen/_13sdp</item>
+        <item name="neumorph_cornerSizeTopRight">@dimen/_13sdp</item>
+        <item name="neumorph_cornerSizeBottomLeft">@dimen/_13sdp</item>
+        <item name="neumorph_cornerSizeBottomRight">@dimen/_13sdp</item>
+    </style>
+
+    <style name="NeumarphismCard">
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">@dimen/_8sdp</item>
+        <item name="neumorph_cornerSizeTopRight">@dimen/_8sdp</item>
+        <item name="neumorph_cornerSizeBottomLeft">@dimen/_8sdp</item>
+        <item name="neumorph_cornerSizeBottomRight">@dimen/_8sdp</item>
+    </style>
+
+    <style name="NeumorphismCardTheme">
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_shadowColorLight">@color/white</item>
+        <item name="neumorph_shadowColorDark">@color/black</item>
+        <item name="neumorph_backgroundColor">@color/gray</item>
+    </style>
+
+    <style name="BottomBar">
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="background">@drawable/back_bottom_bar</item>
+    </style>
+
+    <style name="ClickEffect">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="customBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="bottomDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/customBottomSheetStyle</item>
+    </style>
+
+</resources>

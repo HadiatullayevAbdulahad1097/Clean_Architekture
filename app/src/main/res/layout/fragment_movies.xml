@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    tools:context=".ui.fragment.movie.MoviesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    style="@style/NeumorphismCardTheme"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/settings" />
+
+                </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    style="@style/NeumorphismCardTheme"
+                    app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/wallpaper" />
+
+                </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:spanCount="2"
+            tools:listitem="@layout/item_note"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:padding="@dimen/_19sdp"
+        app:neumorph_backgroundColor="#D5D5D5"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        style="@style/NeumorphismCardTheme"
+        android:src="@drawable/add_note" />
+
+</FrameLayout>

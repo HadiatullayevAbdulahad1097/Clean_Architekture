@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/gray"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface"
+            android:text="Title"
+            android:textSize="@dimen/_11ssp"
+            android:translationX="@dimen/_20sdp" />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/NeumorphismCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NeumorphismCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/_13ssp"
+                app:boxCornerRadiusBottomStart="@dimen/_13ssp"
+                app:boxCornerRadiusTopEnd="@dimen/_13ssp"
+                app:boxCornerRadiusTopStart="@dimen/_13ssp"
+                app:boxStrokeColor="#111111"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/spacegroteskmedium"
+                    android:hint="Title"
+                    android:padding="@dimen/_10sdp"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/_14ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface"
+            android:text="Note"
+            android:textSize="@dimen/_11ssp"
+            android:translationX="@dimen/_20sdp" />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/NeumorphismCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/NeumorphismCardTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/_13ssp"
+                app:boxCornerRadiusBottomStart="@dimen/_13ssp"
+                app:boxCornerRadiusTopEnd="@dimen/_13ssp"
+                app:boxCornerRadiusTopStart="@dimen/_13ssp"
+                app:boxStrokeColor="#111111"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/spacegroteskmedium"
+                    android:hint="Note"
+                    android:padding="@dimen/_10sdp"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/_14ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/NeumorphismCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_backgroundColor="#CBD7DC"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+            <TextView
+                android:id="@+id/btn_save"
+                style="@style/ClickEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abrilfatface"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="Save"
+                android:textColor="#111111"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/NeumorphismCardTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_backgroundColor="#B5B5B5"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+            <TextView
+                android:id="@+id/btn_back"
+                style="@style/ClickEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abrilfatface"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

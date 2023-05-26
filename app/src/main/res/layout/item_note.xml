@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/NeumorphismCardTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface"
+            android:gravity="center"
+            android:text="Text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spacegroteskmedium"
+            android:text="Hi, I'm Diego, volunteer with
+Sharon Kidd for BART Director.
+The Mercury News says
+incumbent Lateefah Simon failed
+to make tough decisions.
+Democrat Sharon Kidd servedon
+the BART Citizen's Police Review
+"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+</soup.neumorphism.NeumorphCardView>

@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://jitpack.io' }
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://jitpack.io' }
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+rootProject.name = "Clean Arhitekture"
+include ':app'
